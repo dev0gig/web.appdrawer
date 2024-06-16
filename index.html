@@ -12,7 +12,7 @@
 <body>
 	<section class="main">
 
-<div class="card">
+		<div class="card">
 			<div class="card-header">
 				<div>Office</div>
 			</div>
@@ -346,21 +346,36 @@
 
 	</section>
 
-	<script>
-		const buttons = document.querySelectorAll(".app");
+	<footer>
+		<div class="group-apps">
+			<button class="app" data-url="https://calendar.google.com/calendar/u/0/r" data-img="">Calendar</button>
+			<button class="app"
+				data-url="https://myaccount.google.com/?utm_source=account-marketing-page&utm_medium=go-to-account-button&pli=1"
+				data-img="">Google-Account</button>
+			<button class="app" data-url="https://account.microsoft.com/?refd=support.microsoft.com"
+				data-img="">Microsoft-Account</button>
+			<button class="app" data-url="https://www.icloud.com/" data-img="">Apple-Account</button>
+			<button class="app" data-url="https://v3.account.samsung.com/dashboard" data-img="">Samsung-Account</button>
+		</div>
 
-		buttons.forEach((button) => {
-			button.addEventListener("click", () => {
-				const url = button.dataset.url;
-				location.href = url;
-			});
-
-			buttons.forEach(function (button) {
-				const imgURL = button.dataset.img;
-				button.style.backgroundImage = `url(${imgURL})`;
-			});
-		});
-	</script>
+	</footer>
 
 </body>
+
+<script>
+	const buttons = document.querySelectorAll(".app");
+
+	buttons.forEach((button) => {
+		button.addEventListener("click", () => {
+			const url = button.dataset.url;
+			location.href = url;
+		});
+
+		buttons.forEach(function (button) {
+			const imgURL = button.dataset.img;
+			button.style.backgroundImage = `url(${imgURL})`;
+		});
+	});
+</script>
+
 </html>
