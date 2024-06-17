@@ -4,8 +4,24 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.main {
-	padding: 10px;
+body{
+	margin: 0px;
+}
+
+header{
+	padding: 5px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: #FFFFFF0f;
+}
+
+main {
+	padding: 20px;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -32,7 +48,7 @@ html {
 .group-apps {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 12px;
+	gap: 15px;
 }
 
 .app {
@@ -48,20 +64,4 @@ html {
 		box-shadow: 0px 0px 10px #03000e;
 		cursor: pointer;
 	}
-}
-
-footer{
-    padding: 20px;
-
-	position: fixed;
-	bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    display: flex;
-    align-items: center;
-
-	background-color: #222;
-	border: 1px solid #555;
-    border-radius: 20px;
 }
