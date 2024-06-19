@@ -1,11 +1,12 @@
 html {
-	background-color: #000;
 	color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
 	margin: 0px;
+
+	background-color: #111;
 }
 
 header{
@@ -17,7 +18,8 @@ header{
 	justify-content: space-between;
 	align-items: center;
 
-	background-color: #FFFFFF0f;
+	background-color: #222;
+	border-bottom: 1px solid #555;
 }
 
 main {
@@ -37,6 +39,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex: 1 300px;
+	align-items: center;
 
 	background-color: #222;
 	border: 1px solid #555;
@@ -49,6 +52,7 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 15px;
+	align-content: space-around;
 }
 
 .app {
