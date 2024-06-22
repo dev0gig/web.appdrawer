@@ -34,12 +34,11 @@ main {
 }
 
 .card {
-	padding: 5px 10px 10px 10px;
+	padding: 20px;
 
 	display: flex;
 	flex-direction: column;
-	flex: 1 300px;
-	align-items: center;
+	flex: 1 1 300px;
 
 	background-color: #222;
 	border: 1px solid #555;
@@ -51,16 +50,15 @@ main {
 .group-apps {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 15px;
-	align-content: space-around;
+	gap: 20px;
 }
 
 .app {
 	background-size: cover;
-	height: 50px;
-	width: 50px;
+	height: 60px;
+	width: 60px;
 	border: none;
-	border-radius: 50px;
+	border-radius: 50%;
 	cursor: pointer;
 
 	&:hover {
