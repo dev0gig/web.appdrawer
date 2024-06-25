@@ -14,7 +14,41 @@
 	<header>
 		<div>©dev0gig | AppDrawer</div>
 		<div>
-			Uhrzeit
+			<span id="dateTime"></span>
+			<script>
+				// Funktion, um den Monat als deutschen Monatsnamen zurückzugeben
+				function getGermanMonthName(monthIndex) {
+					const monthNames = [
+						"Januar", "Februar", "März", "April", "Mai", "Juni",
+						"Juli", "August", "September", "Oktober", "November", "Dezember"
+					];
+					return monthNames[monthIndex];
+				}
+
+				// Funktion, um Datum und Uhrzeit im gewünschten Format zu erhalten
+				function formatDateTime() {
+					const now = new Date();
+
+					const day = now.getDate();
+					const month = getGermanMonthName(now.getMonth());
+					const hours = now.getHours();
+					const minutes = now.getMinutes();
+
+					// Minuten immer zweistellig darstellen
+					const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+
+					return `${day}. ${month} ${hours}:${formattedMinutes}`;
+				}
+
+				// Funktion, um das formatierte Datum und Uhrzeit in ein HTML-Element einzufügen
+				function displayDateTime() {
+					const dateTimeElement = document.getElementById('dateTime');
+					dateTimeElement.textContent = formatDateTime();
+				}
+
+				// Das Datum und die Uhrzeit anzeigen, sobald die Seite geladen ist
+				window.onload = displayDateTime;
+			</script>
 		</div>
 		<div>
 			<a href="https://dev0gig.github.io/web.projects/" target="_blank">to my projects</a>
