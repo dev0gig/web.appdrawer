@@ -4,20 +4,49 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Dashboard</title>
-	<link rel="icon" href="https://cdn-icons-png.freepik.com/512/8901/8901603.png" />
-	<link rel="stylesheet" href="style.css">
+	<title>Appdrawer</title>
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10027/10027459.png" />
 </head>
 
-<body>
+<style>
+	html {
+		color: whitesmoke;
+		font-family: Arial, Helvetica, sans-serif;
+	}
 
-	<header>
-		<div>©dev0gig | AppDrawer</div>
-		<div>
-			<a href="https://dev0gig.github.io/web.projects/" target="_blank">to my projects</a>
-			|<a href="https://dev0gig.github.io/web.unicorn/" target="_blank">to unicorn</a>
-		</div>
-	</header>
+	body {
+		margin: 0px;
+		background-color: #111;
+	}
+
+	.app-container {
+		padding: 30px;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.app {
+		background-size: cover;
+		height: 60px;
+		width: 60px;
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.2);
+			box-shadow: 0px 0px 10px #03000e;
+			cursor: pointer;
+		}
+	}
+</style>
+
+<body>
 
 	<div class="app-container">
 		<button class="app" title="Goolge Docs" data-url="https://docs.google.com/document/u/0/"
@@ -183,7 +212,7 @@
 			data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDIHBD2f5EIgQSM-AS_rWaqUoH9w7hV0owGQ&s"></button>
 
 
-		
+
 
 
 
